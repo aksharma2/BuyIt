@@ -26,7 +26,7 @@ if (isset($_POST['name']) && isset($_POST['price']) && isset($_POST['description
     $db = new DB_CONNECT();
  
     // mysql inserting a new row
-    $result = mysql_query("INSERT INTO products(name, price, location, distance, description) VALUES('$name', '$price', '$location', '$distance', '$description')");
+    $result = mysql_query("INSERT INTO basket(name, price, location, distance, description) VALUES('$name', '$price', '$location', '$distance', '$description')");
  
     // check if row inserted or not
     if ($result) {
